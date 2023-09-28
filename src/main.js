@@ -48,7 +48,7 @@ camera.position.setY(5)
 
 loader.load(
     // resource URL
-    './assets/scene.gltf',
+    '../public/img/scene.gltf',
     // called when the resource is loaded
     function (gltf) {
         model = gltf.scene;

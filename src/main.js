@@ -48,7 +48,7 @@ camera.position.setY(5)
 
 loader.load(
     // resource URL
-    '../public/img/scene.gltf',
+    '/scene.gltf',
     // called when the resource is loaded
     function (gltf) {
         model = gltf.scene;
@@ -189,10 +189,10 @@ toggle.onclick = function() {
 
     if (currentTheme === "dark") {
         targetTheme = "light";
-        myImg.src = "../assets/herobg2.jpg"
+        myImg.src = "/herobg2.jpg"
     }
     else{
-        myImg.src="../assets/herobg.jpg"
+        myImg.src="/herobg.jpg"
     }
 
     document.documentElement.setAttribute('data-theme', targetTheme)

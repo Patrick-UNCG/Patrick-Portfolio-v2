@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en" data-theme="light" id="html-el">
+
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="icon" type="image/svg+xml" href="./assets/spaceship.png" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Viga&display=swap"
+    rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,shrink-to-fit=no">
+  <title>Patrick Ksor</title>
+</head>
+
+<body class="font-[Roboto] overflow-x-hidden bg-bkg max-w-[1920px] mx-auto">
+  <div class="flex text-sm md:text-xl justify-between text-content w-full h-[35px] fixed top-0 left-0 z-40 py-10"
+    id="navbar">
+    <div class="px-2 lg:px-20 gap-2 flex justify-center items-center">
+      <img src="./assets/startup.png" class="w-5 h-5 " />
+      <a href="#" class="text-lg lg:text-2xl font-bold hover:text-accent-2">Patrick Ksor</a>
+    </div>
+    <div class="hidden md:flex justify-evenly gap-2 md:gap-6">
+      <div class="below-menu-holder flex duration-700 justify-around">
+        <a href="#about" class="navbar-text material-icons self-center hover:underline hover:text-accent-2">About</a>
+      </div>
+      <div class="below-menu-holder duration-700 flex justify-around">
+        <a href="#skills" class="navbar-text material-icons self-center hover:underline hover:text-accent-2">Skills</a>
+      </div>
+      <div class="below-menu-holder flex duration-700 justify-around">
+        <a href="#projects"
+          class="navbar-text material-icons self-center hover:underline hover:text-accent-2">Projects</a>
+      </div>
+      <div class="below-menu-holder flex duration-700 justify-around">
+        <a href="#contact"
+          class="navbar-text material-icons self-center hover:underline hover:text-accent-2">Contact</a>
+      </div>
+    </div>
+
+    <div class="flex justify-center items-center text-2xl lg:px-20">
+
+      <button class="md:px-10 hover:text-accent-2" id="theme-button">
+        <ion-icon name="sunny-outline"></ion-icon>
+      </button>
+
+      <button class=" md:hidden block w-16 hover:text-accent-2" id="">
+        <ion-icon name="menu-outline" class="dropdownBtn"></ion-icon>
+      </button>
+
+      <div class="relative ">
+        <div
+          class="transition-transform dropdown hidden absolute right-6 z-10 mt-2 w-56 divide-y divide-gray-100 rounded-md bg-bkg shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none md:hidden"
+          role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+          <div class="py-1" role="none">
+            <a href="#about"
+              class="text-content block px-4 py-2 text-sm hover:bg-accent-1 hover:underline ease-in duration-100 bg-bkg dropdown-item"
+              role="menuitem" tabindex="-1" id="menu-item-0">About</a>
+            <a href="#skills"
+              class="text-content block px-4 py-2 text-sm hover:bg-accent-1 hover:underline ease-in duration-100 bg-bkg dropdown-item"
+              role="menuitem" tabindex="-1" id="menu-item-1">Skills</a>
+            <a href="#projects"
+              class="text-content block px-4 py-2 text-sm hover:bg-accent-1 hover:underline ease-in duration-100 bg-bkg dropdown-item"
+              role="menuitem" tabindex="-1" id="menu-item-4">Projects</a>
+            <a href="#contact"
+              class="text-content block px-4 py-2 text-sm hover:bg-accent-1 hover:underline ease-in duration-100 bg-bkg dropdown-item"
+              role="menuitem" tabindex="-1" id="menu-item-5">Contact</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class=" ">
+    <header class="h-screen pt-[75px] flex justify-center items-center flex-col m-auto md:items-start ">
+      <img src="./assets/herobg.jpg" class="w-screen h-screen fixed top-0 left-0 top object-cover" id="hero">
+
+      <div class="px-10 md:px-20 text-start z-20">
+        <div class="w-full text-content flex flex-col hiddenn">
+          <h3 class="font-bold">FULL STACK DEV</h3>
+          <h1 class="font-bold font-[Viga] text-5xl md:text-[6rem] md:py-5 lg:text-[8rem] m-0 ">PATRICK
+          </h1>
+          <p class="pb-5">
+            A full stack web developer skilled in both front-end and back-end development, capable of creating a
+            complete
+            web application from start to finish. </p>
+          <div class="flex gap-2 items-center ease-in duration-300 hover:text-accent-2 w-fit">
+            <ion-icon name="send-outline"></ion-icon>
+            <a href="#contact" class="text-xl font-normal border-b border-solid border-content ">
+              Contact Me!
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="about" class="w-full scroll-mt-20 mb-20">
+      <div class="text-content text-xs md:text-base bg-bkg px-10 md:px-20 md:flex gap-10 justify-center items-center">
+        <div class="flex flex-col gap-5">
+          <h2 class="hiddenn text-white font-bold text-2xl md:text-4xl tracking-widest">ABOUT ME</h2>
+          <p class="hiddenn">Hello! I'm Patrick Ksor, a passionate and dedicated web developer
+            with a keen eye for detail and a determination to deliver the very best in every project. I thrive on
+            turning
+            ideas into reality through code and creativity.
+            I have a solid foundation in computer science as shown with a Bachelors in Computer Science from The
+            University of North Carolina at Greensboro.
+            Over the years, I've honed my skills in various programming languages, frameworks, and technologies,
+            allowing
+            me
+            to tackle a wide range of development projects.
+            My expertise lies in HTML, CSS, JavaScript, React as well as Java, Python and MySQL. I'm constantly
+            expanding
+            my
+            skill set to stay up-to-date with the latest
+            trends and technologies in the ever-evolving world of web development. In my free time I love working out,
+            playing video games, and hanging out with friends and family.</p>
+        </div>
+        <div class="flex justify-center items-center w-full md:w-1/2 h-[500px] hiddenn">
+          <canvas id="bg"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-content w-full mb-20 scroll-mt-24" id="skills">
+      <div class="px-10 md:px-20 hiddenn text-start flex-col min-w-[400px] w-full gap-5 flex">
+        <h2 class="text-2xl font-bold md:text-4xl tracking-widest">SKILLS</h2>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 place-content-center text-xs md:text-base">
+          <div
+            class="rounded-lg shadow-3xl hover:scale-105 ease-in duration-300 p-6 flex gap-5 justify-center items-center delay-100">
+            <img src="./assets/atom.png" class="w-10 md:w-16 m-auto" />React
+          </div>
+          <div
+            class="rounded-lg shadow-3xl hover:scale-105 ease-in duration-300 p-6 flex gap-5 justify-center items-center text-sm delay-100">
+            <img src="./assets/js.png" class="w-10 md:w-16 m-auto" />JavaScript
+          </div>
+          <div
+            class="rounded-lg shadow-3xl hover:scale-105 ease-in duration-300 p-6 flex gap-5 justify-center items-center delay-100">
+            <img src="./assets/html-5.png" class="w-10 md:w-16 m-auto" />HTML
+          </div>
+          <div
+            class="rounded-lg shadow-3xl hover:scale-105 ease-in duration-300 p-6 flex gap-5 justify-center items-center delay-100">
+            <img src="./assets/python.png" class="w-10 md:w-16 m-auto" />Python
+          </div>
+          <div
+            class="rounded-lg shadow-3xl hover:scale-105 ease-in duration-300 p-6 flex gap-5 justify-center items-center delay-300">
+            <img src="./assets/css-3.png" class="w-10 md:w-16 m-auto" />CSS
+          </div>
+          <div
+            class="rounded-lg shadow-3xl hover:scale-105 ease-in duration-300 p-6 flex gap-5 justify-center items-center delay-300">
+            <img src="./assets/java.png" class="w-10 md:w-16 m-auto" />Java
+          </div>
+          <div
+            class="rounded-lg shadow-3xl hover:scale-105 ease-in duration-300 p-6 flex gap-5 justify-center items-center delay-300">
+            <img src="./assets/mysql.png" class="w-10 md:w-16 m-auto" />MySql
+          </div>
+          <div
+            class="rounded-lg shadow-3xl hover:scale-105 ease-in duration-300 p-6 flex gap-5 justify-center items-center delay-300">
+            <img src="./assets/git.png" class="w-10 md:w-16 m-auto" />Git
+          </div>
+          <div
+            class="rounded-lg shadow-3xl hover:scale-105 ease-in duration-300 p-6 flex gap-5 justify-center items-center delay-300">
+            <img src="./assets/Firebase_Logo_Logomark.png" class="w-10 md:w-16 m-auto" />Firebase
+          </div>
+          <div
+            class="rounded-lg shadow-3xl hover:scale-105 ease-in duration-300 p-6 flex gap-5 justify-center items-center">
+            <img src="./assets/stripe.png" class="w-10 md:w-16 m-auto" />Stripe
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class=" w-full flex mb-20 scroll-mt-32">
+      <div class="px-10 md:px-20 text-content hiddenn bg-bkg text-xs md:text-base flex-wrap flex-col flex gap-5">
+        <h2 class="text-2xl font-bold md:text-4xl text-start tracking-widest">PROJECTS</h2>
+
+        <div class="flex flex-col lg:flex-row gap-10">
+          <!-- Project 1 -->
+          <div class="bg-bkg p-12 hiddenn shadow-3xl rounded-lg flex flex-col lg:w-1/2 gap-2">
+            <div class="flex justify-between">
+              <a href="https://casualcool.netlify.app/" target="_blank"
+                class="text-lg md:text-2xl font-bold hover:text-accent-2 h-auto md:h-[100px]">Casual Class E-Commerce
+                Store</a>
+              <div>
+                <a href="https://casualcool.netlify.app/" target="_blank"
+                  class="text-2xl  hover:text-accent-2"><ion-icon name="link"></ion-icon></a>
+                <a href="https://github.com/Patrick-UNCG/CasualCool-Store" target="_blank"
+                  class="text-2xl hover:text-accent-2"><ion-icon name="logo-github"></ion-icon></a>
+              </div>
+            </div>
+            <div class="h-auto md:h-[150px] xl:w-2/3">
+              <p>Casual Class is a vibrant and contemporary casual clothing store, dedicated to providing a diverse
+                range
+                of
+                trendy, comfortable, and stylish clothing options for
+                individuals seeking everyday fashion that effortlessly fits their lifestyle.</p>
+            </div>
+
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="text-accent-2 inline-block bg-accent-2 bg-opacity-20 px-3 py-2 rounded-full hover:scale-105 ease-in duration-300">React</span>
+              <span
+                class="text-accent-2 inline-block bg-accent-2 bg-opacity-20 px-3 py-2 rounded-full hover:scale-105 ease-in duration-300">HTML</span>
+              <span
+                class="text-accent-2 inline-block bg-accent-2 bg-opacity-20 px-3 py-2 rounded-full hover:scale-105 ease-in duration-300">Tailwind</span>
+              <span
+                class="text-accent-2 inline-block bg-accent-2 bg-opacity-20 px-3 py-2 rounded-full hover:scale-105 ease-in duration-300">Stripe</span>
+              <span
+                class="text-accent-2 inline-block bg-accent-2 bg-opacity-20 px-3 py-2 rounded-full hover:scale-105 ease-in duration-300">Firestore</span>
+            </div>
+            <a href="https://casualcool.netlify.app/" target="_blank">
+              <img
+                class="w-full rounded-lg border-2 border-accent-2 hover:scale-105 ease-in duration-300 hover:border-accent-1 transition hover:opacity-40 mt-10"
+                src="./assets/casualclass.png" />
+            </a>
+          </div>
+          <!-- Project 2 -->
+          <div class="bg-bkg p-12 hiddenn shadow-3xl rounded-lg flex flex-col lg:w-1/2 gap-2">
+            <div class="flex justify-between">
+              <a href="https://casualcool.netlify.app/" target="_blank"
+                class="text-lg md:text-2xl font-bold hover:text-accent-2 h-auto md:h-[100px]">Pokedex Web
+                Application</a>
+              <div>
+                <a href="https://patrickksor-pokedex.netlify.app/" target="_blank"
+                  class="text-2xl hover:text-accent-2"><ion-icon name="link"></ion-icon></a>
+                <a href="https://github.com/Patrick-UNCG/pokedex" target="_blank"
+                  class="text-2xl hover:text-accent-2"><ion-icon name="logo-github"></ion-icon></a>
+              </div>
+            </div>
+            <div class="h-auto md:h-[150px] xl:w-2/3">
+              <p>The Pokédex is a web application that serves as a digital encyclopedia of Pokémon, providing a
+                comprehensive
+                collection of details and information about each
+                Pokémon species from the popular Pokémon universe. </p>
+            </div>
+            <div class="flex flex-wrap gap-2 ">
+              <span
+                class="text-accent-2 inline-block bg-accent-2 bg-opacity-20 px-3 py-2 rounded-full hover:scale-105 ease-in duration-300">React</span>
+              <span
+                class="text-accent-2 inline-block bg-accent-2 bg-opacity-20 px-3 py-2 rounded-full hover:scale-105 ease-in duration-300">HTML</span>
+              <span
+                class="text-accent-2 inline-block bg-accent-2 bg-opacity-20 px-3 py-2 rounded-full hover:scale-105 ease-in duration-300">CSS</span>
+              <span
+                class="text-accent-2 inline-block bg-accent-2 bg-opacity-20 px-3 py-2 rounded-full hover:scale-105 ease-in duration-300">JavaScript</span>
+              <span
+                class="text-accent-2 inline-block bg-accent-2 bg-opacity-20 px-3 py-2 rounded-full hover:scale-105 ease-in duration-300">REST
+                API</span>
+            </div>
+            <a href="https://patrickksor-pokedex.netlify.app/" target="_blank">
+              <img
+                class="w-full rounded-lg border-2 border-accent-2 hover:scale-105 ease-in duration-300 hover:border-accent-1 transition hover:opacity-40 mt-10"
+                src="./assets/pokedex.png" />
+            </a>
+          </div>
+        </div>
+        <!-- Add more projects as needed -->
+      </div>
+    </section>
+
+
+    <div class="relative flex items-top sm:pt-0 px-10 md:px-20 hiddenn mb-20 scroll-mt-20 h-auto" id="contact">
+      <div class="w-full h-1/2">
+        <div class="overflow-hidden">
+          <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="sm:rounded-lg">
+              <h1 class="text-2xl font-bold md:text-4xl text-start tracking-widest text-content">
+                GET IN TOUCH!
+              </h1>
+              <p class="text-normal text-lg sm:text-2xl font-medium text-content mt-2">
+                Fill in the form to start a conversation
+              </p>
+
+              <div class="flex items-center mt-2 text-content">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  viewBox="0 0 24 24" class="w-8 h-8 text-gray-500">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                <div class="ml-4 text-md tracking-wide font-semibold w-40">
+                  patrickksor2@gmail.com
+                </div>
+              </div>
+            </div>
+
+            <form class="flex flex-col justify-center" netlify name="Netlify Contact Form">
+              <div class="flex flex-col">
+                <label for="name" class="hidden">Full Name</label>
+                <input required type="name" name="name" id="name" placeholder="Full Name"
+                  class="w-100 mt-2 py-3 px-3 rounded-lg bg-bkg border border-accent-2 text-content font-semibold focus:border-accent-1 focus:outline-none">
+              </div>
+
+              <div class="flex flex-col mt-2">
+                <label for="email" class="hidden">Email</label>
+                <input required type="email" name="email" id="email" placeholder="Email"
+                  class="w-100 mt-2 py-3 px-3 rounded-lg bg-bkg border border-accent-2 text-content font-semibold focus:border-accent-1 focus:outline-none">
+              </div>
+
+              <div class="flex flex-col mt-2">
+                <label for="message" class="hidden">Message</label>
+                <textarea required id="message" name="message" placeholder="Message" rows="4" cols="50"
+                  class="mt-2 py-3 px-3 rounded-lg bg-bkg border border-accent-2 text-content font-semibold focus:border-accent-1 focus:outline-none"></textarea>
+              </div>
+              <button type="submit"
+                class="md:w-32 bg-accent-2 hover:bg-accent-1 text-white font-bold py-3 px-6 rounded-lg mt-3 transition ease-in-out duration-300">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="px-auto bg-accent-2 mx-auto">
+    <div class="text-center py-5">
+      <p>&copy; 2023 Patrick Ksor</p>
+    </div>
+    <div class='text-black text-2xl max-w-full flex justify-center pb-5'>
+      <a href="https://github.com/Patrick-UNCG" target="_blank" rel="noreferrer"><ion-icon
+          name="logo-github"></ion-icon></a>
+      <a href="https://linkedin.com/in/patrickksor" target="_blank" rel="noreferrer"><ion-icon
+          name="logo-linkedin"></ion-icon></a>
+      <a href="./assets/Patrick_resume_remake (9).pdf" target="_blank" rel="noreferrer"><ion-icon
+          name="document-outline"></ion-icon></a>
+    </div>
+  </footer>
+</body>
+<script defer src="./src/main.js" type="module"></script>
+
+</html>

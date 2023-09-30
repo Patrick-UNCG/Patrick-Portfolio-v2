@@ -3,6 +3,10 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 // Setup
+var preloader = document.getElementById('preloader');
+window.addEventListener('load', function () {
+    preloader.style.display= "none";
+  })
 
 const scene = new THREE.Scene();
 
@@ -198,6 +202,7 @@ toggle.onclick = function() {
     document.documentElement.setAttribute('data-theme', targetTheme)
     localStorage.setItem('theme', targetTheme);
     localStorage.setItem('background', JSON.stringify(myImg.src));
+    window.location.reload();
 };
 
 

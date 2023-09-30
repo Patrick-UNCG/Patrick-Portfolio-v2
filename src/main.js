@@ -187,6 +187,7 @@ if(storedBg){
 // Take action when the image has loaded
 
 toggle.onclick = function() {
+    window.location.reload();
     var currentTheme = document.documentElement.getAttribute("data-theme");
     var targetTheme = "dark";
     
@@ -202,7 +203,7 @@ toggle.onclick = function() {
     document.documentElement.setAttribute('data-theme', targetTheme)
     localStorage.setItem('theme', targetTheme);
     localStorage.setItem('background', JSON.stringify(myImg.src));
-    window.location.reload();
+    
 };
 
 

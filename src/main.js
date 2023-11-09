@@ -194,10 +194,10 @@ toggle.onclick = function() {
 
     if (currentTheme === "dark") {
         targetTheme = "light";
-        myImg.src = "/herobg2.jpg"
+        myImg.src = "/herobg2.webp"
     }
     else{
-        myImg.src="/herobg.jpg"
+        myImg.src="/herobg.webp"
     }
 
     document.documentElement.setAttribute('data-theme', targetTheme)

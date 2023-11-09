@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="manifest" href="/manifest.json" />
   <link rel="icon" type="image/svg+xml" href="./assets/spaceship.png" />
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +26,7 @@
   <div class="flex text-sm md:text-xl justify-between text-content w-full h-[35px] fixed top-0 left-0 z-40 py-10"
     id="navbar">
     <div class="px-2 lg:px-20 gap-2 flex justify-center items-center">
-      <img src="./assets/startup.png" class="w-5 h-5 " loading="lazy" />
+      <img src="./assets/startup.png" class="w-5 h-5 " alt="rocket" loading="lazy" />
       <a href="#" class="text-lg lg:text-2xl font-bold hover:text-accent-2">Patrick Ksor</a>
     </div>
     <div class="hidden md:flex justify-evenly gap-2 md:gap-6">
@@ -47,11 +48,11 @@
 
     <div class="flex justify-center items-center text-2xl lg:px-20">
 
-      <button class="md:px-10 hover:text-accent-2" id="theme-button">
+      <button class="md:px-10 hover:text-accent-2" id="theme-button" aria-label="Theme-toggle-button">
         <ion-icon name="sunny-outline"></ion-icon>
       </button>
 
-      <button class=" md:hidden block w-16 hover:text-accent-2" id="">
+      <button class=" md:hidden block w-16 hover:text-accent-2" id="" aria-label="Hamburger-button">
         <ion-icon name="menu-outline" class="dropdownBtn"></ion-icon>
       </button>
 
@@ -81,7 +82,7 @@
   </div>
   <div class=" " id="page">
     <header class="h-screen pt-[75px] flex justify-center items-center flex-col m-auto md:items-start ">
-      <img src="/herobg.jpg" class="w-screen h-screen fixed top-0 left-0 top object-cover" id="hero">
+      <img src="/herobg.webp" class="w-screen h-screen fixed top-0 left-0 top object-cover" id="hero" alt="/">
 
       <div class="px-10 md:px-20 text-start z-20">
         <div class="w-full text-content flex flex-col hiddenn">
@@ -134,43 +135,43 @@
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 place-content-center text-xs md:text-base">
           <div
             class="rounded-lg shadow-3xl hover:scale-105 ease-in duration-300 p-6 flex gap-5 justify-center items-center delay-100">
-            <img src="./assets/atom.png" class="w-10 md:w-16 m-auto" loading="lazy"/>React
+            <img src="./assets/atom.webp" class="w-10 md:w-16 m-auto" loading="lazy" alt="/" width="64" height="64"/>React
           </div>
           <div
             class="rounded-lg shadow-3xl hover:scale-105 ease-in duration-300 p-6 flex gap-5 justify-center items-center text-sm delay-100">
-            <img src="./assets/js.png" class="w-10 md:w-16 m-auto" loading="lazy"/>JavaScript
+            <img src="./assets/js.webp" class="w-10 md:w-16 m-auto" loading="lazy" alt="/" width="64" height="64"/>JavaScript
           </div>
           <div
             class="rounded-lg shadow-3xl hover:scale-105 ease-in duration-300 p-6 flex gap-5 justify-center items-center delay-100">
-            <img src="./assets/html-5.png" class="w-10 md:w-16 m-auto" loading="lazy"/>HTML
+            <img src="./assets/html-5.webp" class="w-10 md:w-16 m-auto" loading="lazy" alt="/" width="64" height="64"/>HTML
           </div>
           <div
             class="rounded-lg shadow-3xl hover:scale-105 ease-in duration-300 p-6 flex gap-5 justify-center items-center delay-100">
-            <img src="./assets/python.png" class="w-10 md:w-16 m-auto" loading="lazy"/>Python
+            <img src="./assets/python.webp" class="w-10 md:w-16 m-auto" loading="lazy" alt="/" width="64" height="64"/>Python
           </div>
           <div
             class="rounded-lg shadow-3xl hover:scale-105 ease-in duration-300 p-6 flex gap-5 justify-center items-center delay-300">
-            <img src="./assets/css-3.png" class="w-10 md:w-16 m-auto" loading="lazy"/>CSS
+            <img src="./assets/css-3.webp" class="w-10 md:w-16 m-auto" loading="lazy" alt="/" width="64" height="64"/>CSS
           </div>
           <div
             class="rounded-lg shadow-3xl hover:scale-105 ease-in duration-300 p-6 flex gap-5 justify-center items-center delay-300">
-            <img src="./assets/java.png" class="w-10 md:w-16 m-auto" loading="lazy"/>Java
+            <img src="./assets/java.webp" class="w-10 md:w-16 m-auto" loading="lazy" alt="/" width="64" height="64"/>Java
           </div>
           <div
             class="rounded-lg shadow-3xl hover:scale-105 ease-in duration-300 p-6 flex gap-5 justify-center items-center delay-300">
-            <img src="./assets/mysql.png" class="w-10 md:w-16 m-auto" loading="lazy"/>MySql
+            <img src="./assets/mysql.webp" class="w-10 md:w-16 m-auto" loading="lazy" alt="/" width="64" height="64"/>MySql
           </div>
           <div
             class="rounded-lg shadow-3xl hover:scale-105 ease-in duration-300 p-6 flex gap-5 justify-center items-center delay-300">
-            <img src="./assets/git.png" class="w-10 md:w-16 m-auto" loading="lazy"/>Git
+            <img src="./assets/git.webp" class="w-10 md:w-16 m-auto" loading="lazy" alt="/" width="64" height="64"/>Git
           </div>
           <div
             class="rounded-lg shadow-3xl hover:scale-105 ease-in duration-300 p-6 flex gap-5 justify-center items-center delay-300">
-            <img src="./assets/Firebase_Logo_Logomark.png" class="w-10 md:w-16 m-auto" loading="lazy"/>Firebase
+            <img src="./assets/Firebase_Logo_Logomark.webp" class="w-10 md:w-16 m-auto" loading="lazy" alt="/" width="64" height="64"/>Firebase
           </div>
           <div
             class="rounded-lg shadow-3xl hover:scale-105 ease-in duration-300 p-6 flex gap-5 justify-center items-center">
-            <img src="./assets/stripe.png" class="w-10 md:w-16 m-auto" loading="lazy"/>Stripe
+            <img src="./assets/stripe.webp" class="w-10 md:w-16 m-auto" loading="lazy" alt="/" width="64" height="64"/>Stripe
           </div>
         </div>
       </div>
@@ -185,12 +186,12 @@
           <div class="bg-bkg p-12 hiddenn shadow-3xl rounded-lg flex flex-col gap-2">
             <div class="flex justify-between">
               <a href="https://gymgauge.netlify.app/" target="_blank"
-                class="text-lg md:text-2xl font-bold hover:text-accent-2 h-auto md:h-[100px]">Gym Gauge Workout Generator</a>
+                class="text-lg md:text-2xl font-bold hover:text-accent-2 h-auto md:h-[100px]" aria-label="app hosted on netlify">Gym Gauge Workout Generator</a>
               <div>
                 <a href="https://gymgauge.netlify.app/" target="_blank"
-                  class="text-2xl  hover:text-accent-2"><ion-icon name="link"></ion-icon></a>
+                  class="text-2xl  hover:text-accent-2" aria-label="app hosted on netlify"><ion-icon name="link"></ion-icon></a>
                 <a href="https://github.com/Patrick-UNCG/gym-gauge" target="_blank"
-                  class="text-2xl hover:text-accent-2"><ion-icon name="logo-github"></ion-icon></a>
+                  class="text-2xl hover:text-accent-2"><ion-icon name="logo-github" aria-label="github repository"></ion-icon></a>
               </div>
             </div>
             <div class="h-auto md:h-[150px] xl:w-2/3">
@@ -210,23 +211,23 @@
               <span
                 class="text-accent-2 inline-block bg-accent-2 bg-opacity-20 px-3 py-2 rounded-full hover:scale-105 ease-in duration-300">DaisyUI</span>
             </div>
-            <a href="https://gymgauge.netlify.app/" target="_blank">
+            <a href="https://gymgauge.netlify.app/" target="_blank" aria-label="app hosted on netlify">
               <img
                 class="w-full rounded-lg border-2 border-accent-2 hover:scale-105 ease-in duration-300 hover:border-accent-1 transition hover:opacity-40 mt-10"
-                src="/gymgauge.png" loading="lazy"/>
+                src="/gymgauge.webp" loading="lazy" alt="/" width="640" height="360"/>
             </a>
           </div>
           <!-- Project 2 -->
           <div class="bg-bkg p-12 hiddenn shadow-3xl rounded-lg flex flex-col gap-2">
             <div class="flex justify-between">
               <a href="https://casualcool.netlify.app/" target="_blank"
-                class="text-lg md:text-2xl font-bold hover:text-accent-2 h-auto md:h-[100px]">Casual Class E-Commerce
+                class="text-lg md:text-2xl font-bold hover:text-accent-2 h-auto md:h-[100px]" aria-label="app hosted on netlify">Casual Class E-Commerce
                 Store</a>
               <div>
                 <a href="https://casualcool.netlify.app/" target="_blank"
-                  class="text-2xl  hover:text-accent-2"><ion-icon name="link"></ion-icon></a>
+                  class="text-2xl  hover:text-accent-2" aria-label="app hosted on netlify"><ion-icon name="link"></ion-icon></a>
                 <a href="https://github.com/Patrick-UNCG/CasualCool-Store" target="_blank"
-                  class="text-2xl hover:text-accent-2"><ion-icon name="logo-github"></ion-icon></a>
+                  class="text-2xl hover:text-accent-2"><ion-icon name="logo-github" aria-label="github repository"></ion-icon></a>
               </div>
             </div>
             <div class="h-auto md:h-[150px] xl:w-2/3">
@@ -249,23 +250,23 @@
               <span
                 class="text-accent-2 inline-block bg-accent-2 bg-opacity-20 px-3 py-2 rounded-full hover:scale-105 ease-in duration-300">Firestore</span>
             </div>
-            <a href="https://casualcool.netlify.app/" target="_blank">
+            <a href="https://casualcool.netlify.app/" target="_blank" aria-label="app hosted on netlify">
               <img
                 class="w-full rounded-lg border-2 border-accent-2 hover:scale-105 ease-in duration-300 hover:border-accent-1 transition hover:opacity-40 mt-10"
-                src="/casualclass.png" loading="lazy"/>
+                src="/casualclass.webp" loading="lazy" alt="/" width="640" height="360"/>
             </a>
           </div>
           <!-- Project 3 -->
           <div class="bg-bkg p-12 hiddenn shadow-3xl rounded-lg flex flex-col gap-2">
             <div class="flex justify-between">
               <a href="https://patrickksor-pokedex.netlify.app/" target="_blank"
-                class="text-lg md:text-2xl font-bold hover:text-accent-2 h-auto md:h-[100px]">Pokedex Web
+                class="text-lg md:text-2xl font-bold hover:text-accent-2 h-auto md:h-[100px]" aria-label="app hosted on netlify">Pokedex Web
                 Application</a>
               <div>
                 <a href="https://patrickksor-pokedex.netlify.app/" target="_blank"
-                  class="text-2xl hover:text-accent-2"><ion-icon name="link"></ion-icon></a>
+                  class="text-2xl hover:text-accent-2"><ion-icon name="link" aria-label="app hosted on netlify"></ion-icon></a>
                 <a href="https://github.com/Patrick-UNCG/pokedex" target="_blank"
-                  class="text-2xl hover:text-accent-2"><ion-icon name="logo-github"></ion-icon></a>
+                  class="text-2xl hover:text-accent-2"><ion-icon name="logo-github" aria-label="github repository"></ion-icon></a>
               </div>
             </div>
             <div class="h-auto md:h-[150px] xl:w-2/3">
@@ -287,10 +288,10 @@
                 class="text-accent-2 inline-block bg-accent-2 bg-opacity-20 px-3 py-2 rounded-full hover:scale-105 ease-in duration-300">REST
                 API</span>
             </div>
-            <a href="https://patrickksor-pokedex.netlify.app/" target="_blank">
+            <a href="https://patrickksor-pokedex.netlify.app/" target="_blank" aria-label="app hosted on netlify">
               <img
                 class="w-full rounded-lg border-2 border-accent-2 hover:scale-105 ease-in duration-300 hover:border-accent-1 transition hover:opacity-40 mt-10"
-                src="/pokedex.png" loading="lazy"/>
+                src="/pokedex.webp" loading="lazy" alt="/" width="640" height="360"/>
             </a>
           </div>
         </div>
